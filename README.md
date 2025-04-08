@@ -7,23 +7,8 @@
 
 #### Here is a piece of code that I made that features a random fact at the top of the website.
 
-``` javascript
-        for(index = 0; index < classFacts.length; index++){
-        console.log(index);
-        $('#classFactList').append('<li class="list-group-item">' + classFacts[index] + '</li>');
-
-        function displayRandomFact() {
-        const randomFact = classFacts[Math.floor(Math.random() * classFacts.length)];
-        document.getElementById('randomFactHeader').innerText = randomFact;
-    }
-
-    $('#randomFactHeader').css('text-align', 'center');
-
-    displayRandomFact();
-        
-        renderList();
-    }
-```
+https://github.com/JaxonTheCritic/dev-easy/blob/c9e816147641bd407b8c92f7efe5e6db72cdfe10/scripts/script.js#L33-L40
+https://github.com/JaxonTheCritic/dev-easy/blob/c9e816147641bd407b8c92f7efe5e6db72cdfe10/scripts/script.js#L46-L51
 
 I also made this part of the code which made the **facts editable**. However, with how I programmed this it **does not change the actual facts** in the array. It only changed them on the webpage, this means a simple refresh would have the facts back to normal.
 ``` diff
@@ -36,9 +21,18 @@ I also made this part of the code which made the **facts editable**. However, wi
 ```
 
 This is the code Corey wrote to sort the facts from A-Z or Z-A 
-
-https://github.com/JaxonTheCritic/dev-easy/blob/c9e816147641bd407b8c92f7efe5e6db72cdfe10/scripts/script.js#L72-L82
-
+```       $("#sortButton").on("click", function () {
+            if (isAscending) {
+                classFacts.sort(); // Sort A-Z
+                $(this).text("Sort Z-A");
+            } else {
+                classFacts.sort().reverse(); // Sort Z-A
+                $(this).text("Sort A-Z");
+            }
+            isAscending = !isAscending;
+            renderList(); // Re-render list after sorting
+        });
+```
 By using const classFacts = []; Corey allowed us to set up an array with all of our class facts seperated by a comma inside the brackets.
 
 
