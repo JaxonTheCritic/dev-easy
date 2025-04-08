@@ -17,7 +17,7 @@
 https://github.com/JaxonTheCritic/dev-easy/blob/c9e816147641bd407b8c92f7efe5e6db72cdfe10/scripts/script.js#L33-L40
 https://github.com/JaxonTheCritic/dev-easy/blob/c9e816147641bd407b8c92f7efe5e6db72cdfe10/scripts/script.js#L46-L51
 
-I also made this part of the code which made the facts editable. However, with how I programmed this it **does not change the actual facts** in the array. It only changed them on the webpage, this means a simple refresh would have the facts back to normal.
+I also made this part of the code which made the facts editable. However, with how I programmed this it does not change the actual facts in the array. It only changed them on the webpage, this means a simple refresh would have the facts back to normal.
 ``` diff
         classFacts.forEach((fact, index) => {
             const factText = $("<div>").addClass("fact-text").attr("contenteditable", true).text(fact);
