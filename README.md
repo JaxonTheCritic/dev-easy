@@ -1,7 +1,7 @@
 # 🦭Dev Easy🦭
 ## This project was made by Jaxon Bladow, Corey Butler, Hayden Carpenter and  Olivia Sharpston.
 
-Everyone played a part and contributed to the project. Olivia got the .html and .script files to look nice and pretty and included project requirements like footers and headers. She also compiled everything into one file and submitted the project. I added the editting a fact and featuring a random fact which are shown below. Corey created the code that allowed users to sort the facts from A-Z or Z-A. Hayden compiled all the class facts and drew our wireframe.
+#### Everyone played a part and contributed to the project. Olivia got the .html and .script files to look nice and pretty and included project requirements like footers and headers. She also compiled everything into one file and submitted the project. I added the editting a fact and featuring a random fact which are shown below. Corey created the code that allowed users to sort the facts from A-Z or Z-A. Hayden compiled all the class facts and drew our wireframe.
 
 
 
@@ -37,7 +37,9 @@ I also made this part of the code which made the **facts editable**. However, wi
 
 This is the code Corey wrote to sort the facts from A-Z or Z-A 
 
-https://github.com/JaxonTheCritic/dev-easy/blob/c9e816147641bd407b8c92f7efe5e6db72cdfe10/scripts/script.js#L72-L84
+https://github.com/JaxonTheCritic/dev-easy/blob/c9e816147641bd407b8c92f7efe5e6db72cdfe10/scripts/script.js#L72-L83
+
+By using const classFacts = []; Corey allowed us to set up an array with all of our class facts seperated by a comma inside the brackets.
 
 
 
