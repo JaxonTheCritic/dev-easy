@@ -37,7 +37,7 @@ I also made this part of the code which made the **facts editable**. However, wi
 
 This is the code Corey wrote to sort the facts from A-Z or Z-A 
 
-https://github.com/JaxonTheCritic/dev-easy/blob/c9e816147641bd407b8c92f7efe5e6db72cdfe10/scripts/script.js#L72-L83
+https://github.com/JaxonTheCritic/dev-easy/blob/c9e816147641bd407b8c92f7efe5e6db72cdfe10/scripts/script.js#L72-L82
 
 By using const classFacts = []; Corey allowed us to set up an array with all of our class facts seperated by a comma inside the brackets.
 
