@@ -1,31 +1,53 @@
-# dev-easy
+# 🦭Dev Easy🦭
+## This project was made by Jaxon Bladow, Corey Butler, Hayden Carpenter and  Olivia Sharpston.
 
-sup - Jaxon
-hi - olivia
-Corey present
-
-SuperBeast?
+#### Everyone played a part and contributed to the project. Olivia got the .html and .script files to look nice and pretty and included project requirements like footers and headers. She also compiled everything into one file and submitted the project. I added the editting a fact and featuring a random fact which are shown below. Corey created the code that allowed users to sort the facts from A-Z or Z-A. Hayden compiled all the class facts and drew our wireframe.
 
 
-Corey is going to look into CSS and an object to add facts
 
-Beast olivia and jaxon keep being cool
+#### Here is a piece of code that I made that features a random fact at the top of the website.
 
-Got a stomach bug at work so I went ahead and made the content editable. If it doesn't work just let me know and I'll reupload the og code.
-- Jaxon 
-It did work! - Olivia
+``` javascript
+        for(index = 0; index < classFacts.length; index++){
+        console.log(index);
+        $('#classFactList').append('<li class="list-group-item">' + classFacts[index] + '</li>');
 
-Hey I made a branch for this project with an A-Z sort feature at the bottom of the fact list
-I did not want to overwrite in case others had something coming
-So we need to have my branch as the most current and add to that
--Corey
+        function displayRandomFact() {
+        const randomFact = classFacts[Math.floor(Math.random() * classFacts.length)];
+        document.getElementById('randomFactHeader').innerText = randomFact;
+    }
 
-I am trying to do the feature fact for the last extra. If anyone wants to take a stab at it before next class, feel free.
-I am going to try to work on it during the weekend, if I get the chance. I haven't uploaded any of that since I haven't got it
-working and didn't want to override what we have working. If someone does a different extra, totally fine (just please leave
-a note stating so) -Olivia
+    $('#randomFactHeader').css('text-align', 'center');
 
-I think I got the random question working - Jaxon
+    displayRandomFact();
+        
+        renderList();
+    }
+```
+
+I also made this part of the code which made the **facts editable**. However, with how I programmed this it **does not change the actual facts** in the array. It only changed them on the webpage, this means a simple refresh would have the facts back to normal.
+``` diff
+        classFacts.forEach((fact, index) => {
+            const factText = $("<div>").addClass("fact-text").attr("contenteditable", true).text(fact);
+
+            factText.on('blur', function() {
+                classFacts[index] = factText.text();
+            });
+```
+
+This is the code Corey wrote to sort the facts from A-Z or Z-A 
+
+https://github.com/JaxonTheCritic/dev-easy/blob/c9e816147641bd407b8c92f7efe5e6db72cdfe10/scripts/script.js#L72-L84
 
 
-This is finished and submitted. -> Group - Corey
+
+
+<details><summary>Our Random Facts</summary>
+        
+* I broke my finger
+* Corey said he was not famous
+* Hayden likes to swim
+* Olivia knows her alphabet backwards
+
+
+</details>
