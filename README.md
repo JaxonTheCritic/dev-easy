@@ -1,7 +1,7 @@
 # 🦭Dev Easy🦭
 ## This project was made by Jaxon Bladow, Corey Butler, Hayden Carpenter and  Olivia Sharpston.
 
-#### Everyone played a part and contributed to the project. Olivia got the .html and .script files to look nice and pretty and included project requirements like footers and headers. She also compiled everything into one file and submitted the project. I added the editting a fact and featuring a random fact which are shown below. Corey created the code that allowed users to sort the facts from A-Z or Z-A. Hayden compiled all the class facts and drew our wireframe.
+Everyone played a part and contributed to the project. Olivia got the .html and .script files to look nice and pretty and included project requirements like footers and headers. She also compiled everything into one file and submitted the project. I added the editting a fact and featuring a random fact which are shown below. Corey created the code that allowed users to sort the facts from A-Z or Z-A. Hayden compiled all the class facts and drew our wireframe.
 
 
 
